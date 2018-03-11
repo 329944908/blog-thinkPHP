@@ -1,0 +1,2314 @@
+[ 2017-11-13T17:59:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009528s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.2957s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0636s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0628s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.030940s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.031035s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.031493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031596s ]
+
+[ 2017-11-13T19:42:40+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0284s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0297s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 38 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0144s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 38 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0388s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =38 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =38 ) LIMIT 1   [ RunTime:0.0254s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.013560s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.013663s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001503s ]
+
+[ 2017-11-13T19:45:23+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 38 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 38 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =38 )  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =38 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-11-13T19:45:26+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 38 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 38 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =38 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =38 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2017-11-13T19:45:36+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 38 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 38 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =38 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =38 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2017-11-13T20:02:53+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 38 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 38 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =38 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =38 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+
+[ 2017-11-13T20:03:37+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 38 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 38 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =38 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =38 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0292s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+
+[ 2017-11-13T20:03:41+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 38 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 38 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =38 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =38 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+
+[ 2017-11-13T20:03:57+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 38 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 38 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =38 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =38 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2017-11-13T20:04:08+08:00 ] 127.0.0.1 /Home/UserCenter/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001673s ]
+
+[ 2017-11-13T20:04:09+08:00 ] 127.0.0.1 /Home/UserCenter/verifyCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2017-11-13T20:04:23+08:00 ] 127.0.0.1 /Home/UserCenter/verifyCode/v/0.6678727361224637
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2017-11-13T20:04:23+08:00 ] 127.0.0.1 /Home/UserCenter/verifyCode/v/0.3332547419898926
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2017-11-13T20:04:24+08:00 ] 127.0.0.1 /Home/UserCenter/verifyCode/v/0.6312253538616235
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2017-11-13T20:04:36+08:00 ] 127.0.0.1 /Home/UserCenter/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `user` WHERE ( email = '123@qq.com' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+
+[ 2017-11-13T20:04:39+08:00 ] 127.0.0.1 /Home/UserCenter/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2017-11-13T20:04:39+08:00 ] 127.0.0.1 /Home/UserCenter/verifyCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2017-11-13T20:04:52+08:00 ] 127.0.0.1 /Home/UserCenter/verifyCode/v/0.6650297293495011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2017-11-13T20:05:00+08:00 ] 127.0.0.1 /Home/UserCenter/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0185s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `user` WHERE ( email = '123@qq.com' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-11-13T20:05:03+08:00 ] 127.0.0.1 /Home/UserCenter/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002143s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2017-11-13T20:05:03+08:00 ] 127.0.0.1 /Home/UserCenter/verifyCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2017-11-13T20:05:21+08:00 ] 127.0.0.1 /Home/UserCenter/verifyCode/v/0.3497948328634233
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2017-11-13T20:05:28+08:00 ] 127.0.0.1 /Home/UserCenter/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `user` WHERE ( email = '123@qq.com' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2017-11-13T20:05:31+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2017-11-13T20:05:33+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2017-11-13T20:05:37+08:00 ] 127.0.0.1 /Home/Home/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0127s ]
+SQL: INSERT INTO `comment` (`user_id`,`blog_id`,`parent_id`,`content`,`createtime`) VALUES ('10','41','0','111','2017:11:13 20:05:37') [ RunTime:0.0809s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2017-11-13T20:05:40+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2017-11-13T20:07:56+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2017-11-13T20:07:59+08:00 ] 127.0.0.1 /Home/home/praise/comment_id/33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0134s ]
+SQL: INSERT INTO `zan` (`user_id`,`comment_id`) VALUES ('10','33') [ RunTime:0.1074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001186s ]
+
+[ 2017-11-13T21:14:29+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0127s ]
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\mythink\Application\Home\Controller\HomeController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0134s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id= ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id= ) LIMIT 1  
+
+[ 2017-11-13T21:15:37+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=33 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2017-11-13T21:15:43+08:00 ] 127.0.0.1 /Home/home/praise/comment_id/33/blog_id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0160s ]
+SQL: INSERT INTO `zan` (`user_id`,`comment_id`,`blog_id`) VALUES ('10','33','41') [ RunTime:0.1186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2017-11-13T21:15:46+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=33 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2017-11-13T21:16:07+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=33 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2017-11-13T21:16:14+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2017-11-13T21:16:18+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 40 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 40 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =40 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=31 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=32 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2017-11-13T21:16:24+08:00 ] 127.0.0.1 /Home/home/praise/comment_id/31/blog_id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0129s ]
+SQL: INSERT INTO `zan` (`user_id`,`comment_id`,`blog_id`) VALUES ('10','31','40') [ RunTime:0.1111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2017-11-13T21:16:27+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 40 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 40 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =40 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=31 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=32 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2017-11-13T21:16:30+08:00 ] 127.0.0.1 /Home/home/disPraise/comment_id/31/blog_id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0132s ]
+SQL: DELETE FROM `zan` WHERE ( user_id = 10 and comment_id=31 ) [ RunTime:0.0363s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2017-11-13T21:16:33+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 40 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 40 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =40 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=31 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0772s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=32 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2017-11-13T21:16:36+08:00 ] 127.0.0.1 /Home/home/praise/comment_id/32/blog_id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0129s ]
+SQL: INSERT INTO `zan` (`user_id`,`comment_id`,`blog_id`) VALUES ('10','32','40') [ RunTime:0.0544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2017-11-13T21:16:39+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 40 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 40 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =40 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=31 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=32 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2017-11-13T21:16:41+08:00 ] 127.0.0.1 /Home/home/disPraise/comment_id/32/blog_id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0133s ]
+SQL: DELETE FROM `zan` WHERE ( user_id = 10 and comment_id=32 ) [ RunTime:0.0379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2017-11-13T21:16:44+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 40 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 40 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =40 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0812s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=31 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=32 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
+[ 2017-11-13T21:16:47+08:00 ] 127.0.0.1 /Home/home/praise/comment_id/31/blog_id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0131s ]
+SQL: INSERT INTO `zan` (`user_id`,`comment_id`,`blog_id`) VALUES ('10','31','40') [ RunTime:0.0323s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2017-11-13T21:16:50+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 40 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 40 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =40 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=31 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=32 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2017-11-13T21:16:53+08:00 ] 127.0.0.1 /Home/home/praise/comment_id/32/blog_id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0132s ]
+SQL: INSERT INTO `zan` (`user_id`,`comment_id`,`blog_id`) VALUES ('10','32','40') [ RunTime:0.0889s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2017-11-13T21:16:56+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 40 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 40 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =40 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=31 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=32 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000936s ]
+
+[ 2017-11-13T21:20:58+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/index.php?c=Home&a=getBlogInfo&id=39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0266s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 39 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 39 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =39 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =39 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2017-11-13T21:21:02+08:00 ] 127.0.0.1 /Home/Home/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0142s ]
+SQL: INSERT INTO `comment` (`user_id`,`blog_id`,`parent_id`,`content`,`createtime`) VALUES ('10','39','0','2222222222','2017:11:13 21:21:02') [ RunTime:0.1392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2017-11-13T21:21:05+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 39 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 39 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =39 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =39 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=34 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2017-11-13T21:21:09+08:00 ] 127.0.0.1 /Home/home/praise/comment_id/34/blog_id/39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0130s ]
+SQL: INSERT INTO `zan` (`user_id`,`comment_id`,`blog_id`) VALUES ('10','34','39') [ RunTime:0.0916s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2017-11-13T21:21:12+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 39 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 39 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =39 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =39 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 10 and comment_id=34 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2017-11-13T21:21:16+08:00 ] 127.0.0.1 /Home/UserCenter/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2017-11-13T21:21:20+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 39 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 39 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =39 )  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =39 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0127s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0133s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=34 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=34 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=34 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=34 ) LIMIT 1  
+
+[ 2017-11-13T21:22:08+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 39 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 39 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =39 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =39 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0137s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0123s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=34 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=34 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=34 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=34 ) LIMIT 1  
+
+[ 2017-11-13T21:22:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001546s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2017-11-13T21:22:16+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2017-11-13T21:22:18+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0173s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0149s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=33 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=33 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=33 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=33 ) LIMIT 1  
+
+[ 2017-11-13T21:23:21+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2017-11-13T21:23:34+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2017-11-13T21:24:05+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0124s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0123s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=33 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=33 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=33 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=33 ) LIMIT 1  
+
+[ 2017-11-13T21:24:08+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0151s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0116s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=33 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=33 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=33 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=33 ) LIMIT 1  
+
+[ 2017-11-13T21:24:26+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0121s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=33 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=33 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=33 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=33 ) LIMIT 1  
+
+[ 2017-11-13T21:24:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2017-11-13T21:24:31+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0134s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=33 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=33 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and comment_id=33 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `zan` WHERE ( user_id =  and comment_id=33 ) LIMIT 1  
+
+[ 2017-11-13T21:25:54+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=33 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2017-11-13T21:26:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2017-11-13T21:26:04+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 39 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 39 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =39 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =39 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=34 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2017-11-13T21:26:09+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/index.php?c=Home&a=getBlogInfo&id=40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 40 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 40 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =40 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=31 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=32 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2017-11-13T21:26:12+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2017-11-13T21:26:15+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 37 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 9 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 9 and id != 37 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =37 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =37 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2017-11-13T21:26:18+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2017-11-13T21:26:21+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 38 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 38 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =38 )  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =38 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0171s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=30 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2017-11-13T21:26:27+08:00 ] 127.0.0.1 /Home/home/praise/comment_id/29/blog_id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Home\Controller\HomeController.class.php 第 88 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0135s ]
+ERR: 1048:Column 'user_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `zan` (`user_id`,`comment_id`,`blog_id`) VALUES (NULL,'29','38')
+ERR: 1048:Column 'user_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `zan` (`user_id`,`comment_id`,`blog_id`) VALUES (NULL,'29','38')
+
+[ 2017-11-13T21:27:05+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 38 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 38 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =38 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =38 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=30 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-11-13T21:27:09+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2017-11-13T21:27:19+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2017-11-13T21:27:20+08:00 ] 127.0.0.1 /Home/Index/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:index.php
+
+[ 2017-11-13T21:27:23+08:00 ] 127.0.0.1 /Home/Index/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:index.php
+
+[ 2017-11-13T21:27:26+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 41 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 10 and id != 41 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =41 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =41 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=33 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2017-11-13T21:27:29+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2017-11-13T21:27:31+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 40 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 40 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =40 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=31 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=32 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2017-11-13T21:30:12+08:00 ] 127.0.0.1 /Home/Home/getBlogInfo/id/40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 40 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 3 and id != 40 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id =40 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id =40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `zan` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=31 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `zan` WHERE ( user_id = 0 and comment_id=32 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `user` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 66 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 85 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 111 行.
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Runtime\Cache\Home\2a54d1948cb8300e37c1d9425554c216.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+

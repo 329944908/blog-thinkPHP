@@ -1,0 +1,53 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+			table{margin: 0 auto;}
+			td{width: 100px;text-align: center;}
+			li{display: inline-block;border: 1px solid #ccc;padding: 10px;}
+	</style>
+	<title></title>
+</head>
+<body>
+	
+	<table border="2px" cellspacing="0" cellpadding="0" background="a.jpg">
+		<caption fontsize="8">论坛中心</caption>
+		<tr>
+			<td>title</td>
+			<td>content</td>
+			<td>image</td>
+			<td>classify</td>
+			<td>time</td>
+			<td>审核</td>
+			<td>edit</td>
+			<td>info</td>
+		</tr>
+		
+		<?php foreach ($data as $key => $value) { ?>
+		<tr>
+			<td><?php echo $value['title'];?></td>
+			<td><?php echo mb_substr($value['content'], 0, 19,'utf8');?></td>
+			<td><img src="<?php echo '/Uploads/'.$value['image'];?>" width=100 height=auto></td>
+			<td><?php echo $value['classify_name']; ?></td>
+			<td><?php echo $value['createtime']?></td>
+			<td><?php if($value['status']==1) { ?>
+						<a href="/Admin/Blog/line/id/<?php echo $value['id']?>">下线</a>
+						<?php }else{ ?>
+						<a href="/Admin/Blog/line/id/<?php echo $value['id']?>">上线</a>
+						<?php } ?>
+			</td>
+			<td><a href="/Admin/Blog/edit/id/<?php echo $value['id'];?>">修改</a></td>
+			<td><a href="/Admin/Blog/blogInfo/id/<?php echo $value['id'];?>">详情</a></td>
+		</tr>
+		<?php } ?>
+	</table>
+	<div align="center">
+		<ul>
+			<?php for($i=1;$i<=$allPage;$i++){ ?>
+			<li><a href="/Admin/Blog/blogLists/p/<?php echo $i;?>"><?php echo $i;?></a></li>
+			<?php } ?>
+		</ul>
+	</div>
+	<a href="/Admin/Blog/add" align="center">发布段子</a><br>
+</body>
+</html>

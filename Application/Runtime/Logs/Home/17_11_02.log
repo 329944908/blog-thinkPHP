@@ -1,0 +1,84 @@
+[ 2017-11-02T20:26:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025324s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.1373s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0445s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0309s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007960s ]
+
+[ 2017-11-02T20:29:22+08:00 ] 127.0.0.1 /index.php?c=Home&a=getBlogInfo&id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0777s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0448s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0367s ]
+SQL: SELECT * FROM `blog` WHERE ( id = 21 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( classify_id = 9 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( classify_id = 9 and id != 21 )  [ RunTime:0.0661s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id = 21 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id = 21 ) LIMIT 1   [ RunTime:0.0255s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Home\View\home\blogInfo.html 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2017-11-02T20:29:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-11-02T20:29:29+08:00 ] 127.0.0.1 /index.php?c=Home&a=getBlogInfo&id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `blog` WHERE ( id = 8 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( classify_id = 4 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( classify_id = 4 and id != 8 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `comment` WHERE ( blog_id = 8 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( blog_id = 8 ) LIMIT 1   [ RunTime:0.0777s ]
+SQL: SELECT * FROM `user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `user` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: me E:\xampp\htdocs\mythink\Application\Home\View\home\blogInfo.html 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
