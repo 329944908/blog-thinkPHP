@@ -1,0 +1,1537 @@
+[ 2018-04-01T11:07:46+08:00 ] 127.0.0.1 /admin/blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001881s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0552s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 0 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 2 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 7 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.020510s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.020613s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001161s ]
+
+[ 2018-04-01T11:08:05+08:00 ] 127.0.0.1 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2018-04-01T11:08:07+08:00 ] 127.0.0.1 /Admin/Blog/blogLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0484s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0308s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0482s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0243s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2018-04-01T11:08:08+08:00 ] 127.0.0.1 /Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+
+[ 2018-04-01T11:18:48+08:00 ] 127.0.0.1 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2018-04-01T11:18:49+08:00 ] 127.0.0.1 /Admin/Blog/blogLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2018-04-01T11:18:50+08:00 ] 127.0.0.1 /Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+
+[ 2018-04-01T11:18:52+08:00 ] 127.0.0.1 /Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001772s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 0 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 2 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 7 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2018-04-01T11:19:04+08:00 ] 127.0.0.1 /Admin/Blog/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0036s ]
+SQL: INSERT INTO `blog` (`title`,`content`,`image`,`classify_id`,`createtime`) VALUES ('ssss','sss','blog/2018-04-01/5ac04fa83eb9f.jpg','5','2018-04-01 11:19:04') [ RunTime:0.0779s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2018-04-01T11:19:05+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2018-04-01T11:19:05+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+
+[ 2018-04-01T11:19:23+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2018-04-01T11:19:23+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+
+[ 2018-04-01T11:19:56+08:00 ] 127.0.0.1 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2018-04-01T11:19:57+08:00 ] 127.0.0.1 /Admin/Blog/blogLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2018-04-01T11:19:57+08:00 ] 127.0.0.1 /Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+
+[ 2018-04-01T11:20:39+08:00 ] 127.0.0.1 /Admin/Blog/line/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `blog` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0034s ]
+SQL: UPDATE `blog` SET `status`='1' WHERE ( id = 35 ) [ RunTime:0.6235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2018-04-01T11:20:40+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-04-01T11:20:40+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001873s ]
+
+[ 2018-04-01T11:21:54+08:00 ] 127.0.0.1 /Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( parent_id= 7 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2018-04-01T11:22:05+08:00 ] 127.0.0.1 /Admin/Blog/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0044s ]
+SQL: INSERT INTO `blog` (`title`,`content`,`image`,`classify_id`,`createtime`) VALUES ('12121212','212121212','blog/2018-04-01/5ac0505d8de71.jpg','3','2018-04-01 11:22:05') [ RunTime:0.2486s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001936s ]
+
+[ 2018-04-01T11:22:07+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002782s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001933s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002162s ]
+
+[ 2018-04-01T11:22:07+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001652s ]
+
+[ 2018-04-01T11:24:24+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2018-04-01T11:24:26+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2018-04-01T11:24:44+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2018-04-01T11:24:48+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2018-04-01T11:24:48+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+
+[ 2018-04-01T11:24:49+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001265s ]
+
+[ 2018-04-01T11:24:49+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+
+[ 2018-04-01T11:24:49+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2018-04-01T11:24:49+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+
+[ 2018-04-01T11:24:49+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001449s ]
+
+[ 2018-04-01T11:24:49+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+
+[ 2018-04-01T11:25:09+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-04-01T11:25:09+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+
+[ 2018-04-01T11:25:10+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2018-04-01T11:25:10+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+
+[ 2018-04-01T11:25:11+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001658s ]
+
+[ 2018-04-01T11:25:11+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+
+[ 2018-04-01T11:25:11+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2018-04-01T11:25:11+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+
+[ 2018-04-01T11:25:12+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001505s ]
+
+[ 2018-04-01T11:25:12+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001968s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2018-04-01T11:25:13+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2018-04-01T11:25:49+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2018-04-01T11:25:49+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002031s ]
+
+[ 2018-04-01T11:25:50+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2018-04-01T11:25:50+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+
+[ 2018-04-01T11:25:50+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2018-04-01T11:25:50+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+
+[ 2018-04-01T11:25:51+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2018-04-01T11:25:52+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2018-04-01T11:25:52+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001895s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2018-04-01T11:26:14+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2018-04-01T11:26:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/blogLists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001338s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` WHERE ( status =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog` WHERE ( 1 ) ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: allPage E:\xampp\htdocs\mythink\Application\Runtime\Cache\Admin\f48a03c07c4234f56d7c8fc17839164f.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2018-04-01T11:26:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+
+[ 2018-04-01T14:48:47+08:00 ] 127.0.0.1 /admin/ad/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-04-01T14:49:00+08:00 ] 127.0.0.1 /admin/ad/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001598s ]
+
+[ 2018-04-01T14:49:12+08:00 ] 127.0.0.1 /Admin/Ad/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: classify_id E:\xampp\htdocs\mythink\Application\Admin\Controller\AdController.class.php 第 12 行.
+NOTIC: [8] Undefined variable: content E:\xampp\htdocs\mythink\Application\Admin\Controller\AdController.class.php 第 16 行.
+
+[ 2018-04-01T14:49:43+08:00 ] 127.0.0.1 /admin/ad/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002204s ]
+
+[ 2018-04-01T14:49:49+08:00 ] 127.0.0.1 /Admin/Ad/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: classify_id E:\xampp\htdocs\mythink\Application\Admin\Controller\AdController.class.php 第 12 行.
+NOTIC: [8] Undefined variable: content E:\xampp\htdocs\mythink\Application\Admin\Controller\AdController.class.php 第 16 行.
+
+[ 2018-04-01T14:51:10+08:00 ] 127.0.0.1 /admin/ad/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001858s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001635s ]
+
+[ 2018-04-01T14:51:17+08:00 ] 127.0.0.1 /Admin/Ad/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: classify_id E:\xampp\htdocs\mythink\Application\Admin\Controller\AdController.class.php 第 12 行.
+NOTIC: [8] Undefined variable: content E:\xampp\htdocs\mythink\Application\Admin\Controller\AdController.class.php 第 16 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0039s ]
+ERR: 1048:Column 'url' cannot be null
+ [ SQL语句 ] : INSERT INTO `ad` (`title`,`url`) VALUES ('1',NULL)
+ERR: 1048:Column 'url' cannot be null
+ [ SQL语句 ] : INSERT INTO `ad` (`title`,`url`) VALUES ('1',NULL)
+
+[ 2018-04-01T14:51:46+08:00 ] 127.0.0.1 /Admin/Ad/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: classify_id E:\xampp\htdocs\mythink\Application\Admin\Controller\AdController.class.php 第 12 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0037s ]
+SQL: INSERT INTO `ad` (`title`,`url`) VALUES ('1','1') [ RunTime:0.1109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001452s ]
+
+[ 2018-04-01T14:51:47+08:00 ] 127.0.0.1 /index.php/Admin/Ad/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lists
+
+[ 2018-04-01T14:54:37+08:00 ] 127.0.0.1 /index.php/Admin/Ad/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001148s ]
+
+[ 2018-04-01T14:54:45+08:00 ] 127.0.0.1 /Admin/Ad/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0036s ]
+SQL: INSERT INTO `ad` (`title`,`url`,`img`) VALUES ('1','1','ad/2018-04-01/5ac082352c702.jpg') [ RunTime:0.0619s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2018-04-01T14:54:46+08:00 ] 127.0.0.1 /index.php/Admin/Ad/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lists
+
+[ 2018-04-01T17:08:42+08:00 ] 127.0.0.1 /admin/ad/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001173s ]
+
+[ 2018-04-01T17:11:53+08:00 ] 127.0.0.1 /Admin/Ad/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0036s ]
+SQL: INSERT INTO `ad` (`title`,`url`,`img`) VALUES ('2','2','ad/2018-04-01/5ac0a259654ec.png') [ RunTime:0.1192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2018-04-01T17:11:54+08:00 ] 127.0.0.1 /index.php/Admin/Ad/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002481s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lists
+
