@@ -1,0 +1,33 @@
+[ 2018-04-12T18:21:20+08:00 ] 127.0.0.1 /api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007047s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.1056s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0471s ]
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0318s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0467s ]
+SQL: SELECT * FROM `ad` WHERE ( status=1 )  [ RunTime:0.0227s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+

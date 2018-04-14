@@ -1,0 +1,27 @@
+[ 2018-04-06T20:14:21+08:00 ] 127.0.0.1 /api/blog/index/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008955s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:index
+
+[ 2018-04-06T20:14:29+08:00 ] 127.0.0.1 /api/blog/info/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.1812s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0584s ]
+NOTIC: [2048] Declaration of Home\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Home\Model\BaseModel.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0315s ]
+SQL: SELECT * FROM `blog` WHERE ( id= 35 ) LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 5 ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0104s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 and classify_id = 5 and id != 35 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0718s ]
+

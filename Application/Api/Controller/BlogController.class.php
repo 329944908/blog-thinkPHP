@@ -28,4 +28,30 @@
     		);
     		_res($result);
 		}
+		public function lists(){
+			$classify_id = $_GET['classify_id'];
+			if(isset($classify_id)&&!empty($classify_id)){
+				$BlogModel = D("Blog");
+    			$ClassifyModel = D("Classify");
+    			$UserModel = D("User");
+				$blog_data = $BlogModel->where(array('status'=>1,'classify_id'=>$classify_id))->select();
+				if($blog_data){
+					foreach ($blog_data as $key => $value) {
+						$user = $UserModel->where("id = {$value['user_id']}")->find();
+						$classify = $ClassifyModel->where("id = {$value['classify_id']}")->find();
+						$blog_data[$key] = $BlogModel->format1($value);
+						$blog_data[$key]['author_name'] = $user['name'];
+						$blog_data[$key]['classify_name'] = $classify['name'];
+					}
+					$result = array(
+	    				"blog_lists"=>$blog_data,
+	    			);
+	    			_res($result);
+				}else{
+					_res('暂无数据',false,'1007');
+				}
+			}else{
+				_res('参数错误',false,'1002');
+			}
+		}
 	}

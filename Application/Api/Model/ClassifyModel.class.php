@@ -45,4 +45,10 @@
 		// 	// $sql = "select classify_id from classify where parent_id ={$parent_id}";
 		// 	// $res = $this->mysqli->query($sql);
 		// }
+		public function format($info){
+			$data = array();
+			$data['classify_id'] = $info['id'];
+			$data['classify_name'] = $info['name'];
+			return $data;
+		}
 	}
