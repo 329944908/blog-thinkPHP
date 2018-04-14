@@ -1,0 +1,181 @@
+[ 2018-04-14T15:07:26+08:00 ] 127.0.0.1 /admin/ad/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001363s ]
+
+[ 2018-04-14T15:08:02+08:00 ] 127.0.0.1 /Admin/Ad/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0056s ]
+SQL: INSERT INTO `ad` (`title`,`url`,`img`) VALUES ('hello','www.baidu.com','ad/2018-04-14/5ad1a8d231815.jpg') [ RunTime:0.0372s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001702s ]
+
+[ 2018-04-14T15:08:03+08:00 ] 127.0.0.1 /index.php/Admin/Ad/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001599s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lists
+
+[ 2018-04-14T15:08:12+08:00 ] 127.0.0.1 /index.php/Admin/Ad/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lists
+
+[ 2018-04-14T15:08:14+08:00 ] 127.0.0.1 /index.php/Admin/Ad/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lists
+
+[ 2018-04-14T15:08:29+08:00 ] 127.0.0.1 /Admin/Ad/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0035s ]
+SQL: INSERT INTO `ad` (`title`,`url`,`img`) VALUES ('hi','www.baidu.com','ad/2018-04-14/5ad1a8ed3a746.jpg') [ RunTime:0.1922s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2018-04-14T15:08:30+08:00 ] 127.0.0.1 /index.php/Admin/Ad/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lists
+
+[ 2018-04-14T15:09:09+08:00 ] 127.0.0.1 /Admin/Ad/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001656s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0053s ]
+SQL: INSERT INTO `ad` (`title`,`url`,`img`) VALUES ('乔沃维奇我v','www.baidu.com','ad/2018-04-14/5ad1a91513aea.jpg') [ RunTime:0.0543s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001863s ]
+
+[ 2018-04-14T15:09:10+08:00 ] 127.0.0.1 /index.php/Admin/Ad/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lists
+
+[ 2018-04-14T15:09:26+08:00 ] 127.0.0.1 /Admin/Ad/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\xampp\htdocs\mythink\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2048] Declaration of Admin\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Admin\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0036s ]
+SQL: INSERT INTO `ad` (`title`,`url`,`img`) VALUES ('哈哈哈哈','www.baidu.com','ad/2018-04-14/5ad1a9261ec5a.jpg') [ RunTime:0.0784s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001326s ]
+
+[ 2018-04-14T15:09:27+08:00 ] 127.0.0.1 /index.php/Admin/Ad/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lists
+

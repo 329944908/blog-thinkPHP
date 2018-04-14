@@ -16,6 +16,7 @@
 			$data['id'] = $info['id'];
 			$data['title'] = $info['title'];
 			$data['content'] = $info['content'];
+			$data['author_name']= $info['author_name'];
 			$data['date'] = $info['createtime'];
 			$data['read_num'] = 101;
 			//$data['user_img'] = $info['user_img'];

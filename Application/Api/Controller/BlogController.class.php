@@ -14,13 +14,14 @@
 			if(!$blogInfo){
 				_res('无法找到该记录',false,'1002');
 			}
-			$where = "classify_id = {$blogInfo['classify_id']}";
-			$brotherBlog = $blogModel ->getLists(0,20,'id asc',$where);
+			//$where = "classify_id = {$blogInfo['classify_id']}";
+			//$brotherBlog = $blogModel ->getLists(0,20,'id asc',$where);
 			$where = "classify_id = {$blogInfo['classify_id']} and id != {$id}";
 			$relation = $blogModel->getLists(0, 10,'id asc',$where);
+			$blogInfo['author_name'] = $userModel->where(array('id'=>$blogInfo['user_id']))->getField('name');
 			$blogInfo = $blogModel->format2($blogInfo);
-			foreach ($brotherBlog as $key => $value) {
-				$brotherBlog[$key] = $blogModel->format3($value);
+			foreach ($relation as $key => $value) {
+				$relation[$key] = $blogModel->format3($value);
 			}
 			$result = array(
 			"blog_info"=>$blogInfo,
