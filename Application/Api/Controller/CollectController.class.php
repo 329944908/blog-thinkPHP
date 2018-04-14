@@ -5,8 +5,8 @@
 		public function add(){
 			$collectModel = D('collect');
 			$userModel = D('user');
-			$user_id = $_GET['user_id'];
-			$blog_id = $_GET['blog_id'];
+			$user_id = $_POST['user_id'];
+			$blog_id = $_POST['blog_id'];
 			if(isset($user_id)&&!empty($user_id)&&isset($blog_id)&&!empty($blog_id)){
 				$status  = $collectModel->where(array('user_id'=>$user_id,'blog_id'=>$blog_id))->find();
 				if(!$status){
