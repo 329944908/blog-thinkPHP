@@ -21663,3 +21663,125 @@ SQL: SELECT * FROM `classify` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
 SQL: SELECT * FROM `user` WHERE ( id = 58 ) LIMIT 1   [ RunTime:0.0005s ]
 SQL: SELECT * FROM `classify` WHERE ( id = 6 ) LIMIT 1   [ RunTime:0.0004s ]
 
+[ 2018-04-18T17:27:35+08:00 ] 192.168.199.121 /api/blog/myBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `blog` WHERE `user_id` = 58  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-18T17:27:36+08:00 ] 192.168.199.121 /api/blog/add?user_id=58&blog_id=209
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `classify` WHERE ( status=1 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `blog` WHERE `user_id` = 58 AND `id` = 209 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-04-18T17:27:37+08:00 ] 192.168.199.121 /api/blog/add?user_id=58
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `classify` WHERE ( status=1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: blog_id E:\xampp\htdocs\mythink\Application\Api\Controller\BlogController.class.php 第 76 行.
+
+[ 2018-04-18T17:27:37+08:00 ] 192.168.199.121 /api/blog/add?user_id=58&blog_id=209
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `classify` WHERE ( status=1 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `blog` WHERE `user_id` = 58 AND `id` = 209 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-04-18T17:28:52+08:00 ] 192.168.199.121 /api/blog/myBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0668s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `blog` WHERE `user_id` = 58  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-18T17:29:01+08:00 ] 192.168.199.188 /api/collect/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: user_id E:\xampp\htdocs\mythink\Application\Api\Controller\CollectController.class.php 第 8 行.
+NOTIC: [8] Undefined index: blog_id E:\xampp\htdocs\mythink\Application\Api\Controller\CollectController.class.php 第 9 行.
+
+[ 2018-04-18T17:29:38+08:00 ] 192.168.199.188 /api/collect/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: user_id E:\xampp\htdocs\mythink\Application\Api\Controller\CollectController.class.php 第 8 行.
+NOTIC: [8] Undefined index: blog_id E:\xampp\htdocs\mythink\Application\Api\Controller\CollectController.class.php 第 9 行.
+

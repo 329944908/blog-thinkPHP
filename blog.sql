@@ -10,10 +10,23 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2018-03-11 14:39:18
+Date: 2018-04-18 17:30:14
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for ad
+-- ----------------------------
+DROP TABLE IF EXISTS `ad`;
+CREATE TABLE `ad` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `img` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `status` int(255) NOT NULL DEFAULT '1',
+  `title` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for blog
@@ -28,19 +41,9 @@ CREATE TABLE `blog` (
   `status` int(11) NOT NULL DEFAULT '0',
   `createtime` datetime NOT NULL,
   `updatetime` datetime NOT NULL,
+  `user_id` int(11) NOT NULL DEFAULT '12',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of blog
--- ----------------------------
-INSERT INTO `blog` VALUES ('35', '1111', '11111111111111', 'blog/2017-11-05/59febf58aa87f.png', '5', '0', '2017-11-05 15:35:52', '0000-00-00 00:00:00');
-INSERT INTO `blog` VALUES ('36', '1111', '11111111111111', 'blog/2017-11-05/59febf58ea290.png', '5', '1', '2017-11-05 15:35:52', '2017-11-07 21:20:46');
-INSERT INTO `blog` VALUES ('37', '1111', '11111111111111', 'blog/2017-11-07/5a01b33725265.png', '9', '1', '2017-11-05 15:44:15', '2017-11-07 21:47:59');
-INSERT INTO `blog` VALUES ('38', 'haha', 'hahaha', 'blog/2017-11-07/5a01b340e09d8.png', '3', '1', '2017-11-07 18:07:26', '2017-11-07 21:21:04');
-INSERT INTO `blog` VALUES ('39', 'uaishfiosdh', 'hahaha', 'blog/2017-11-07/5a018618c6e7f.png', '3', '1', '2017-11-07 18:08:24', '2017-11-07 21:49:05');
-INSERT INTO `blog` VALUES ('40', 'haha', 'hahaha', 'blog/2017-11-07/5a01876f137bb.png', '3', '1', '2017-11-07 18:14:07', '0000-00-00 00:00:00');
-INSERT INTO `blog` VALUES ('41', 'java从入门到放弃', '哈哈哈哈哈哈哈哈哈啊 啊啊啊啊 啊啊啊 啊啊啊 啊啊啊啊啊 啊 ', 'blog/2017-11-10/5a052b662a3dd.png', '10', '1', '2017-11-10 12:30:30', '0000-00-00 00:00:00');
+) ENGINE=InnoDB AUTO_INCREMENT=279 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for classify
@@ -55,18 +58,17 @@ CREATE TABLE `classify` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of classify
+-- Table structure for collect
 -- ----------------------------
-INSERT INTO `classify` VALUES ('1', '慢生活', '0', '1');
-INSERT INTO `classify` VALUES ('2', '网站建设', '0', '0');
-INSERT INTO `classify` VALUES ('3', 'css', '2', '0');
-INSERT INTO `classify` VALUES ('4', 'php', '2', '0');
-INSERT INTO `classify` VALUES ('5', '日记', '1', '0');
-INSERT INTO `classify` VALUES ('6', '欣赏', '1', '1');
-INSERT INTO `classify` VALUES ('7', '啦啦啦啦', '0', '0');
-INSERT INTO `classify` VALUES ('8', '啦1', '7', '0');
-INSERT INTO `classify` VALUES ('9', 'html', '2', '1');
-INSERT INTO `classify` VALUES ('10', 'java', '2', '1');
+DROP TABLE IF EXISTS `collect`;
+CREATE TABLE `collect` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `blog_id` int(11) NOT NULL,
+  `createtime` datetime NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for comment
@@ -83,11 +85,6 @@ CREATE TABLE `comment` (
 ) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of comment
--- ----------------------------
-INSERT INTO `comment` VALUES ('36', '12', '41', '0', '啊啊啊', '2017-11-17 10:59:39');
-
--- ----------------------------
 -- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
@@ -100,15 +97,9 @@ CREATE TABLE `user` (
   `status` int(11) NOT NULL DEFAULT '1',
   `createtime` datetime NOT NULL,
   `updatetime` datetime DEFAULT NULL,
+  `phone` varchar(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of user
--- ----------------------------
-INSERT INTO `user` VALUES ('10', 'aaa', '123@qq.com', '123', 'user/2017-11-10/5a0527c9b9e42.png', '1', '2017-11-10 12:15:05', null);
-INSERT INTO `user` VALUES ('11', '闫宇轩', '1@qq.com', '1', 'user/2017-11-17/5a0e4b4744d95.png', '1', '2017-11-17 10:36:55', null);
-INSERT INTO `user` VALUES ('12', '牛顿', '2@qq.com', '2', 'user/2017-11-17/5a0e4c0920c58.png', '1', '2017-11-17 10:40:09', null);
+) ENGINE=InnoDB AUTO_INCREMENT=86 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for zan
@@ -120,13 +111,3 @@ CREATE TABLE `zan` (
   `user_id` int(11) NOT NULL,
   `blog_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of zan
--- ----------------------------
-INSERT INTO `zan` VALUES ('33', '1', '10', '41');
-INSERT INTO `zan` VALUES ('31', '1', '10', '40');
-INSERT INTO `zan` VALUES ('32', '1', '10', '40');
-INSERT INTO `zan` VALUES ('34', '1', '10', '39');
-INSERT INTO `zan` VALUES ('33', '1', '12', '41');
-INSERT INTO `zan` VALUES ('35', '1', '12', '41');
