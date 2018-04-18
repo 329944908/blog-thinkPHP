@@ -1,0 +1,196 @@
+body,html {
+	font-size: 62.5%;
+}
+body,html,p,span,div,i,a,img,h2 {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+
+.box-login {
+	margin: 4rem 2.5rem;
+	border: 1px solid #e4d6d6;
+	border-radius: 4px;
+}
+.box-login:last-child {
+	border-bottom: 0;
+}
+.new-login {
+	padding: 2rem 2rem;
+	border-bottom: 1px solid #e4d6d6;
+}
+.new-login>h2 {
+	font-size: 1.8rem;
+	color: #4d5e73;
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+}
+.new-login>input {
+	width: 90%;
+	background: #fff;
+    display: block;
+    border: 1px solid #d5dce5;
+	margin-bottom: 1.5rem;
+	padding: 1.2rem;
+	border-radius: 4px;
+	outline: 0;
+	margin-right: 0.5rem;
+}
+.new-login>input:focus {
+    border: 1px solid #d6f1ff;
+}
+.hide {
+	display: none;
+}
+.mistake {
+	padding: 0.6rem 0.4rem;
+	background: #fff0f0;
+	border-radius: 4px;
+	color: #b74d46;
+	margin-bottom: 1.2rem;
+    border: 1px solid #ffd2d2;
+}
+.mistake>i{
+    display: inline-block;
+    background: url("../image/login-logic-icons.png") no-repeat 0 0;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin: -4px 5px -2px 0px;
+}
+.mistake>div {
+	display: inline-block;
+	font-size: 1.2rem;
+}
+.forget {
+	margin-bottom: 2rem;
+}
+.forget>label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #4d5e73;
+}
+.forget .forget-biu {
+	color: #4d5e73;
+	float: right;
+}
+.btn-login {
+	margin: 2rem 0;
+	background: #c90a16;
+	border: solid 1px #c90000;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #fff inset;
+}
+.btn-login>a {
+	display: block;
+	padding: 1rem 0;
+	width: 100%;
+	color: #fff;
+	font-size: 1.8rem;
+	text-align: center;
+}
+.link-login>p {
+	font-size: 1.4rem;
+	color: #666;
+    margin-bottom: 1rem;
+}
+.link-login>p>a {
+	margin-left: 2rem;
+	color: #428bca;
+	font-size: 1.4rem;
+}
+.show {
+	display: block;
+}
+.link-login>span {
+	display: block;
+	padding: 0.2rem 0;
+	margin-bottom: 1rem;
+}
+.link-login>span>a:first-child {
+	margin-left: 0;
+}
+.link-login>span>a {
+	display: inline-block;
+	float: left;
+	margin-left: 0.1rem;
+	width: 3.2rem;
+    height: 3.2rem; 
+	background: url("../image/login-third-party-new.png") no-repeat;
+}
+.clearfix::after {
+	display: block;
+	height: 0;
+	content: "";
+	clear: both;
+}
+.link-login .link-qq {
+	background-position: 0 0;
+}
+.link-login .link-wei {
+	background-position: -37px 0;
+}
+.link-login .link-bo {
+	background-position: -74px 0;
+}
+.link-login .link-baidu {
+	background-position: -112px 0;
+}
+.link-login .link-partc {
+	background-position: -147px 0;
+}
+.link-login .link-git {
+	background-position: -187px 0;
+}
+.foot-link {
+	padding: 0.5rem 0;
+	border-top: 1px solid #d1d1d1;
+}
+.foot-link>a {
+	display: inline-block;
+	color: #666;
+	margin: 0.6rem 0;
+	border-right: 1px solid #d1d1d1;
+	padding: 0 0.5rem;
+	font-size: 1.4rem;
+}
+.foot-else {
+	border-top: 1px solid #d1d1d1;
+	padding: 0.8rem 0.3rem;
+}
+.foot-else>a ,.foot-else>span {
+	margin: 0.4rem 0;
+	display: inline-block;
+	margin-right: 0.6rem;
+	color: #666;
+	font-size: 1.2rem;
+}
+.foot-else>span {
+	padding-right: 0.7rem;
+	margin: 0.4rem 0;
+	border-right: 1px solid #d1d1d1;
+}
+.foot-else>span:last-child {
+	color: #999;
+}
+.foot-else>a>i {
+	display: inline-block;
+	height: 1.5rem;
+	width: 1.5rem;
+	vertical-align: top;
+	background-position: 0 0;
+	background: url("../image/qq_icon.png") no-repeat;
+}
+.foot-else>span>i {
+    display: inline-block;
+	height: 1.5rem;
+	width: 1.5rem;
+	vertical-align: top;
+	background-position: 0 0;
+	background: url("../image/phone_icon.png") no-repeat;
+}
+.foot-else>span:last-child>i {
+	background: url("../image/gongshang_logos.jpg") no-repeat;
+}

@@ -1,0 +1,112 @@
+body,input,h1 {
+	padding: 0;
+	margin: 0;
+}
+.title {
+ 	padding: 1rem 0;
+}
+.title {
+	color: #000;
+  font-size: 20px;
+}
+.title>input {
+  position: relative;
+  z-index: 10;
+  top: 1px;
+  left: 2px;
+  height: 3rem;
+ 	width: 90%;
+ 	padding: 1rem;
+ 	box-sizing: border-box;
+}
+.class-input {
+  width:150px;
+  height: 35px;
+}
+.class-input>option {
+  padding: 0.2rem;
+  height: 3rem;
+}
+#box>p, #box>button {
+  display: inline-block;
+  clear:both;
+}
+#box>button {
+	margin-left: 60px;
+  width: 80px;
+  height: 35px;
+}
+.wid-tainer {
+ 	width: 100%;
+}
+.wid-tainer>div {
+	clear: both;
+}
+.total {
+  width:20%;
+  position: absolute;
+  top: 1px;
+}
+.total-text {
+  width: 80%;
+  float: right;
+}
+.total-text>div>button {
+  border:1px solid #C92027;
+  color: #C92027;
+  background: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+.total-text>div>button:hover {
+  background: #C92027;
+  color: #fff;
+}
+.show>p {
+  margin-top: 1rem;
+}
+.total>p {
+  color: #999;
+  padding: 0 1rem;
+}
+.total>a {
+  display: block;
+  padding: 0.7rem 1rem;
+  color: #666;
+  text-decoration: none;
+}
+.total>a:hover {
+  background: #C92027;
+  color: #fff;
+}
+.total .bg {
+  background: #C92027;;
+  color: #fff;
+}
+#box>div {
+  display: inline-block;
+}
+#box>div:last-child {
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.clear::after{
+  clear: both;
+  display: block;
+  height: 0;
+  content: "";
+}
+#box {
+ position: relative;
+}
+.show {
+  display: block;
+}
+.hide{
+  display: none;
+}
+.info-text {
+  margin-bottom: 1rem;
+}

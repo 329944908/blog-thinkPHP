@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <script type="text/javascript" src="./js/vue.js"></script>
+  <script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="component">
+        <input type="text" placeholder="标题" class="title" name="title">
+        <input type="text" placeholder="内容" class="content" name="content">
+        </br>
+        <button type="button" @click="addNew()">新增最后一条</button>
+        <button type="button" @click="addOver()">新增最前面一条</button>
+        <button type="button" @click="deleteTop()">删除第一条</button>
+        <button type="button" @click="deleteLast()">删除最后面第一条</button>
+        <button type="button" @click="tranForm()">翻转全部</button>
+        <button type="button" @click="addMore()">添加多条</button>
+        <ul>
+          <li v-for="item in list"><span>{{ item.title }}</span> <span>-</span><span>{{ item.content }}</span><button type="button" @click="deleteItem(item)">删除</button> 
+          <button type="button" @click="writeItem(item)">确认编辑</button> </li>
+        </ul>
+    </div>
+  <script>
+      var a = [1,1,2,2,3,3,4,4,5,1];
+      var b=[];
+       for(var k=0; k<a.length; k++){
+        var isRepeat =false;
+        for(var j=0; j<b.length; j++){
+          if(a[k]==b[j]){
+            isRepeat =true;
+          }
+        }
+        if(!isRepeat){
+          b.push(a[k]);
+        }
+       }
+       console.log(b);
+
+        var List = new Vue({
+          el:"#component",
+          data: {
+            list: [
+              {
+                "title":"小薇说：刘萌萌",
+                "content":"刘萌萌是猪"
+              },
+              {
+                "title":"亚倩说：我觉得楼上说的对",
+                "content":"点赞"
+              },
+              {
+                "title":"亚倩再说：咦",
+                "content":"好怕她打我哦"
+              },
+              {
+                "title":"小薇说：不怕 ",
+                "content":"刘萌萌胳膊不够粗"
+              },
+            ],
+            a:"hahahhahah",
+          },
+          methods: {
+            //添加多条
+            addMore: function(){
+              var newList = [
+              {
+                "title":"亚倩说：说得真对啊",
+                "content":"而且我还知道刘萌萌 最喜欢覃淇莹了",
+              },
+               {
+                "title":"亚倩说：说得真对啊",
+                "content":"而且我还知道刘萌萌 最喜欢覃淇莹了",
+              },
+               {
+                "title":"亚倩说：说得真对啊",
+                "content":"而且我还知道刘萌萌 最喜欢覃淇莹了",
+              }
+              ];
+              var aaa=this.list.concat(newList);
+              this.list =aaa;
+            },
+            //增加最后一条
+            addNew: function(){
+              var newItem = {
+                "title":"亚倩说：说得真对啊",
+                "content":"而且我还知道刘萌萌 最喜欢覃淇莹了",
+              };
+              this.list.push(newItem);
+            },
+            //增加第一条
+            addOver:function(){
+               var newItem = {
+                "title":"覃淇莹说：",
+                "content":"刘萌萌是猪对吧",
+              };
+              this.list.unshift(newItem);
+            },
+            //删除最后一项
+            deleteLast:function(){
+              this.list.pop();
+            },
+            //删除第一条
+            deleteTop:function(){
+              this.list.shift();
+            },
+            //翻转全组排序
+            tranForm:function(){
+              this.list.reverse();
+            },
+            deleteItem:function(deleteThis){
+              var that = this;
+              this.list.forEach(function(item,index){
+                 if( item == deleteThis ){
+                  that.list.splice(index,1);
+                 }
+              })
+            },
+            writeItem:function(writeThis){
+              var titleAbout = $(".title").val();
+              var contentAbout = $(".content").val();
+              if(titleAbout !="" && contentAbout !=""){
+                writeThis.title = titleAbout;
+                writeThis.content = contentAbout; 
+                titleAbout = $(".title").val("");
+                contentAbout = $(".content").val("");
+              }else{
+                alert("输入内容不能为空");
+              }
+            } 
+            },
+        })
+
+  </script>
+</body>
+</html>

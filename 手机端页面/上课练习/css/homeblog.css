@@ -1,0 +1,151 @@
+body,html {
+	font-size: 62.5%;
+}
+body,html,p,span,div,i,a,img,h2 {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+.box-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 2%;
+	background: #fff;
+	z-index: 15;
+	box-sizing: border-box;
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
+.box-header>span {
+	display: inline-block;
+	width: 32%;
+	vertical-align: middle;
+}
+.box-header>span>a {
+	display: inline-block;
+}
+.box-header>span>a>i {
+	display: inline-block;
+	color: #333;
+	font-size: 2.2rem;
+}
+.logo {
+	text-align: center;
+	font-size: 2.8rem;
+	font-weight: 550;
+}
+.logo>a {
+	color: #000;
+}
+.logo>a>span {
+	color: #e34535;
+}
+.mtool {
+	float: left;
+	position: relative;
+	bottom: -0.5rem;
+}
+.header-login {
+	text-align: right;
+}
+.header-login>a, .header-login>span{
+	color: #e34535;
+	font-size: 2.2rem;
+	display: inline-block;
+}
+.header-login>span>a {
+	color: #e34535;
+	font-size: 2.2rem;
+}
+.header-login>a{
+	margin-right: 1rem;
+}
+.header-login>span>a>img  {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background: pink;
+}
+.box-content {
+	position: relative;
+	top: 5rem;
+	background: rgba(0,0,0,0.1);
+	width: 100%;
+}
+.cont-title {
+	white-space: nowrap;
+	padding: 0 0 0 1.2rem;
+}
+.cont-title>div {
+	white-space:nowrap;
+	overflow-y:hidden;
+	height: 4.5rem;
+	width: 100%;
+	/*overflow:auto*/
+}
+.cont-title>div>a {
+	display: inline-block;
+	padding: 1rem;
+	color: #333;
+	font-size: 2.5rem;
+}
+.swiper-img {
+	width: 100%;
+	overflow: hidden;
+}
+.swiper-img .swiper-wrapper>a {
+	width: 100%;
+	display:block;
+}
+.swiper-img .swiper-wrapper>a>img {
+	display: block;
+	width: 100%;
+}
+.swiper-img .swiper-wrapper {
+	width: 1000%;
+	height: 20rem;
+	overflow: hidden;
+}
+.cont-info {
+	background: #fff;
+}
+.cont-info>div {
+   border-bottom: 1px solid #e4d6d6;
+}
+.blog-info {
+	padding: 1.5rem 1.2rem;
+}
+.blog-info>h2 {
+   font-size: 2.8rem;
+   font-weight: 550;
+   margin-bottom: 1rem;
+}
+.blog-info>h2>a {
+	color: #000;
+}
+.info-text>span {
+	font-size: 1.8rem;
+	color: #333;
+	vertical-align: bottom;
+	margin-right: 1.3rem;
+	display: inline-block;
+}
+.info-text>span:first-child {
+	color: #349edf;
+}
+.info-text>span:last-child {
+	color: #999;
+}
+.info-text .line-width {
+	max-width: 8rem;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

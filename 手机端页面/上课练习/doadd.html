@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发布博客</title>
+  <link rel="stylesheet" href="./css/doadd.css">
+  <link rel="stylesheet" href="./css/homeblog.css">
+    <script type="text/javascript" src="./ueditor/ueditor.config.js"></script>
+  	<script type="text/javascript" src="./ueditor/ueditor.all.min.js"></script>
+  	<script type="text/javascript" src="./ueditor/lang/zh-cn/zh-cn.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+	<div id="box">
+    <div class="total">
+      <p>内容</p>
+       <a href="javascript:void(0)" @click="write":class="isShow ? 'bg' : ''">写博客</a>
+       <a href="javascript:void(0)" @click="mann":class="isShow ? '' : 'bg'">博客管理</a>
+    </div>
+		<div class="total-text" >
+      <div :class="isShow ? 'show' : 'hide'">
+          <div class="title">标题：<input v-model="title" type="text" name="title"></div>
+          <script id="container" name="content" type="text/plain" class="wid-tainer"></script>
+          <p>
+            博客分类：
+            <select v-model="classid" class="class-input" @click="classadd()" >
+              <option :value="itema.classify_id" selected="selected" v-for="itema in lists.classify_lists">{{ itema.classify_name }}</option>
+              <!-- <option value="4">it</option> -->
+            </select>
+          </p>
+          <button @click="ispush">发布博客</button> 
+      </div> 
+      <div :class="isShow ? 'hide' : 'show'">
+        <div class="cont-info">
+          <div class="blog-info" v-for="item in list.my_blog_lists">
+            <h2><a :href="'./blogdetail.html?id='+item.id+''">{{ item.title }}</a></h2>
+            <div class="info-text">
+              <span>博客类型 : {{ item.classify_name }}</span>
+              <span class="line-width">{{ item.content }}</span>
+              <span>{{ item.read_num }}阅读</span>
+              <span>{{ item.date }}</span>
+            </div>
+            <button @click="clickDel(item)">删除</button>
+            <button @click="clickWrite(item)">编辑</button>
+          </div>
+        </div>  
+      </div>
+    </div>
+	</div>
+	<script>
+       var editor = new Vue({
+    		el: "#box",
+    		data: {
+          lists: [],
+          list:[],
+    			title: "",
+    			classid: "",
+          isShow: true,
+    		},
+    		mounted: function(){
+    			var ue = UE.getEditor('container');
+    		},
+    		methods: {
+          classadd:function(){
+              var that = this;
+              var userId = window.localStorage.getItem("user_id");
+              $.ajax({
+                url: 'http://blog.com/api/blog/add',
+                type: 'get',
+                dataType:'json',
+                data: {
+                  user_id:userId,
+                },
+                success:function(res){
+                  that.lists = res.data;
+                  
+                }
+              })
+          },
+          clickDel:function(item){
+             var that = this;
+              var userId = window.localStorage.getItem("user_id");
+              $.ajax({
+                url: 'http://blog.com/api/blog/del',
+                type: 'post',
+                dataType:'json',
+                data: {
+                  user_id:userId,
+                  blog_id:item.id,
+                },
+                success:function(res){
+                  if(res.error_code == 0){
+                    alert("删除成功");
+                    window.location.reload();
+                    that.list.forEach(function(i,index){
+                      if(i.user_id == item.id){
+                        that.list.splice(index,1)
+                      }
+                    })
+
+                  }else {
+                    alert(res.message);
+                  }
+                }
+              })
+          },
+          clickWrite:function(item){
+              var that = this;
+              var userId = window.localStorage.getItem("user_id");
+              $.ajax({
+                url: 'http://blog.com/api/blog/add',
+                type: 'get',
+                dataType:'json',
+                data: {
+                  user_id:userId,
+                  blog_id:item.id,
+                },
+                success:function(res){
+                  var bb =item.id;
+                  console.log(item.id)
+                  window.location.href="./donew.html?id="+item.id ;
+                  if(res.error_code == 0){
+                    // window.localStorage.getItem("blog_id",res.data.my_blog_info.id);
+                    // that.list = res.data;
+                  }else {
+                    alert(res.message);
+                  }
+                }
+              })
+          },
+          write:function(){
+            this.isShow = true;
+          },
+          mann:function(){
+            this.isShow = false;
+            var that = this;
+            var userId = window.localStorage.getItem("user_id");
+            $.ajax({
+              url: 'http://blog.com/api/blog/myBlog',
+              type: 'post',
+              dataType:'json',
+              data: {
+                user_id:userId,
+              },
+              success:function(res){
+                that.list = res.data;
+              }
+            })
+          },
+    			getUeditorContent: function(){
+    				return UE.getEditor('container').getContent()
+    			},
+    			ispush:function(){
+            var that = this;
+            var userId = window.localStorage.getItem("user_id");
+    				$.ajax({
+    					"url": "http://blog.com/api/blog/doAdd",
+    					"type": "post",
+    					"dataType": "json",
+    					"data": {
+    						"user_id": userId,
+    						"title": that.title,
+    						"content": that.getUeditorContent(),
+    						"classify_id": that.classid,
+    					},
+    					success: function(res){
+    						if(res.error_code == 0){
+    							alert("发布成功即将跳转。。。。。。");
+    							// window.location.href="./myblog.html"
+    						}else {
+    							alert(res.message);
+    						}
+    					}
+    				})
+    			}
+    		}
+    	})
+	</script>
+</body>
+</html>

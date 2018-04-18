@@ -1,0 +1,156 @@
+body,html,div,a,h2,img,span,p,i {
+	padding: 0;
+	margin: 0;
+}
+body,html {
+	font-size: 62.5%;
+}
+a {
+	text-decoration: none;
+	color: #000;
+	font-size: 1.4rem;
+}
+.header {
+	background-color: #fff;
+	padding: 0.5rem 1.5rem;
+}
+.new-header {
+    position: relative;
+}
+.new-header>a>span {
+    font-size: 2rem;
+    position: relative;
+    top: -0.7rem;
+    color: #333;
+    font-weight: 500;
+}
+.new-header>a {
+	display: inline-block;
+	float: right;
+}
+.main-slide>img {
+	width: 100%;
+	height: 100%;
+}
+.nav-swiper {
+	width: 100%;
+	overflow: hidden;
+}
+.nav-number {
+	width: 100%;
+	height: 10.5rem;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y:hidden;	 
+}
+.clearfix::after {
+	display: block;
+	content: "";
+	height: 0;
+	clear: both;
+}
+.teacher>a {
+	display: block;
+	padding: 0.1rem;
+}
+
+.nav-number>a {
+	display: inline-block;
+	width: 20%;
+	height: 10.5rem;
+	text-align: center;
+}
+.nav-number>a>img {
+	width: 5rem;
+	height: 5rem;
+	margin: 1.2rem 0 0.8rem 0;
+	border-radius: 100%;
+}
+.nav-number>a>span {
+	display: block;
+	font-size: 1.8rem;
+}
+.hot>h2 {
+	color: #ec5526;
+	font-size: 2.2rem;
+	padding: 1rem 1.5rem;
+	background-color: #f1eae5;
+}
+.new-teacher {
+	border-bottom: 0.7rem solid #f1eae5;
+	position: relative;
+	display: block;
+	padding: 1.5rem 1.5rem 1.5rem 8rem;
+}
+.new-teacher>img {
+	position: absolute;
+	left: 1.5rem;
+	width: 6rem;
+	height: 6rem;
+}
+.new-a {
+	display: block;
+}
+.teacher-text>p>p, .teacher-text>p>span {
+    display: inline-block;
+    float: left;
+}
+.teacher-text>p>span {
+	font-size: 1.6rem;
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+.teacher-text>p>span>p {
+	margin-right: 0.3rem;
+}
+.teacher-text>p>p {
+	font-size: 1.2rem;
+	margin-right: 0.3rem;
+	vertical-align: middle;
+}
+.a-chlid {
+	display: inline-block;
+    background-color: #2ede39;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.a-border {
+	display: inline-block;
+	border: 1px solid #128219;
+	padding: 0.1rem 0.2rem;
+	border-radius: 0.2rem;
+	color: #128219;
+}
+/*.teacher-text>p {
+	margin-bottom: 0.8rem;
+}*/
+.teacher-text>p:last-child {
+	margin-bottom: 0;
+}
+.teacher-text>p:last-child>span {
+	margin-right: 0.5rem;
+}
+.span-last {
+	float: right !important;
+	color: #666;
+}
+.teacher-text>p>span>i {
+	display: inline-block;
+	position: relative;
+	top: 0.3rem;
+	width: 1.3rem;
+	height: 1.4rem;
+	margin-right: 0.2rem;
+	background-size:cover;
+	background: url("../image/go.jpg") no-repeat center;
+}
+.text-age {
+	font-size: 1.2rem;
+	color: #666;
+	margin: 0.7rem 0;
+}
+.subject .kcolor {
+	background-color: red;
+}

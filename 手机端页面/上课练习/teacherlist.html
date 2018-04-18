@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>知途家教</title>
+	<link rel="stylesheet" href="./css/homelist.css">
+	<link rel="stylesheet" href="./css/home.css">
+	<script type="text/javascript" src="./js/jQuery-3.2.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <div id="box-list">
+    	<div class="box-fixed">
+    		<div class="list-about clearfix" >
+	    		<span class="hh1" v-on:click="blurGrade()":class="isShowGrade ? 'sub-bg' : ''" > {{ grade }} <i></i></span>
+	    		<span class="hh2" v-on:click="blurSub()":class="isShowSub ? 'sub-bg' :  ''" >{{ sub }}<i></i></span>
+	    		<span class="hh3" v-on:click="blurType()":class="isShowType ? 'sub-bg' : ''" >{{ teacherType }} <i></i></span>
+	    	</div>
+	    	<div class="list-tab" :class="isShowAllSelect ? 'show' : 'hide'" v-if="condition">
+	    		<div :class="isShowGrade ? 'show' : 'hide'">
+	    			<a href="javascript:void(0)" v-for="itemp in condition.grade" v-on:click="clickIndex(itemp)":class="itemp.isSelected ? 'sub-bg' : ''">{{ itemp.label }}</a>
+	    		</div>
+	    		<div :class="isShowSub ? 'show' : 'hide'">
+	    			<a href="javascript:void(0)" v-for="itemp in condition.subject" v-on:click="clickIndex(itemp)":class="itemp.isSelected ? 'sub-bg' : ''">{{ itemp.label }}</a>
+	    		</div>
+	    		<div :class="isShowType ? 'show' : 'hide'">
+	    			<a href="javascript:void(0)" v-for="itemp in condition.type" v-on:click="clickIndex(itemp)":class="itemp.isSelected ? 'sub-bg' : ''">{{ itemp.label }}</a>
+	    		</div>
+	    	</div>
+    	</div>
+    	<div class="teacher">
+			<a :href="'./homeinfo.html?id='+item.id+''" v-for="item in lists.teacher" class="new-a">
+				<div class="new-teacher"  >
+					<img :src="item.image" alt="">
+					<div class="teacher-text clearfix" >
+						<p id="p-name">
+							<span>{{ item.name }}</span>
+							<span>
+								<p class="a-chlid"  v-for="items in item.subject" >{{ items.label }}</p>
+							    <p class="a-border" v-for="itema in item.grade">{{ itema.label }}</p>
+							</span>
+							<span class="span-last">已售{{ item.teach_time }}课时</span>
+						</p>
+						<p class="text-age clearfix" >
+							<span>{{ item.teach_year }}年教龄</span>
+						</p>
+						<p class="clearfix span-i">
+							<span v-for="itemb in item.extend_tag">
+								<i></i>
+								{{ itemb.label }}
+							</span>
+						</p>
+					</div>
+				</div>
+			</a>
+		</div>
+    </div>
+	<script type="text/javascript" src="./js/list.js"></script>
+
+	<script type="text/javascript" src="./js/homelist.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>注册</title>
+	<link rel="stylesheet" href="./css/bloglogin.css">
+	<link rel="stylesheet" href="./css/blogregist.css">
+	<script type="text/javascript" src="./js/jQuery-3.2.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <p class="header clearfix"><a href="./bloglogin.html">登录</a></p>
+	<div class="box-login" id="box-login">
+		<div class="new-login">
+			<h2>欢迎注册</h2>
+			<input type="text" class="login-user" placeholder="请输入用户名" ref="inputName" ref="inputName">
+			<input type="text" class="login-name" placeholder="请输入手机号" ref="inputPhone">
+			<input type="password" class="login-password" placeholder="请输入密码" ref="inputPassword">
+			<div class="mistake hide">
+				<i></i>
+				<span v-model="mistake"></span>
+			</div>
+			<div class="forget">
+				<input type="checkbox" id="remeber" class="bg-check">
+				<label for="remeber"></label>我已仔细阅读并接受
+				<a href="javascript:void(0)" class="forget-link">CSDN用户服务条款</a>
+			</div>
+			<div class="btn-login" @click="clickReist">
+				<a href="./bloglogin.html">注册</a>
+			</div>
+		</div>
+		<!-- <div class="new-login link-login">
+			<p>第三方账号登录</p>
+			<span class="clearfix">
+			    <a href="javascript:void(0)" class="link-qq"></a>
+			    <a href="javascript:void(0)" class="link-wei"></a>
+			    <a href="javascript:void(0)" class="link-bo"></a>
+			    <a href="javascript:void(0)" class="link-baidu"></a>
+			    <a href="javascript:void(0)" class="link-partc"></a>
+			    <a href="javascript:void(0)" class="link-git"></a>
+			</span>
+			<p>还没有CSDN账号？<a href="javascript:void(0)">立即注册</a></p>
+		</div> -->
+	</div>
+	<script type="text/javascript" src="./js/blogjs.js"></script>
+	<script type="text/javascript" src="./js/blogregist.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>知途家教</title>
+	<link rel="stylesheet" href="./css/home.css">
+	<script type="text/javascript" src="./js/jQuery-3.2.0.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+	<script type="text/javascript" src="./js/vue.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+</head>
+<body>
+	<div id="box">
+		<div class="header">
+			<div class="new-header">
+				<img src="./image/logo.jpg" alt="">
+				<a href="javascript:void(0)">
+					<img src="./image/people.jpg" alt="">
+					<span>我的</span>
+				</a>
+			</div>
+		</div>
+		<div class="nav-swiper">
+			<div class="swiper-container main-container">
+			    <div class="swiper-wrapper main-wrapper">
+				    <a href="javascript:void(0)" class="swiper-slide main-slide" v-for="item in banner">
+				        <img :src="item.image">
+				    </a>
+			    </div>
+			    <div class="swiper-pagination"></div> 
+			</div>
+		</div>
+		<div class="nav-number clearfix" >
+				<a :href="'./teacherlist.html?id='+item.id+'&name='+item.name+''" v-for="item in list.subjects">
+					<img :src="item.icon" alt="">
+					<span>{{ item.name }}</span>
+				</a>
+				<!-- <a href="javascript:void(0)">
+					<img src="./image/teach2.jpg" alt="">
+					<span>语文</span>
+				</a>
+				<a href="javascript:void(0)">
+					<img src="./image/teach1.jpg" alt="">
+					<span>数学</span>
+				</a>
+				<a href="javascript:void(0)">
+					<img src="./image/teach2.jpg" alt="">
+					<span>美术</span>
+				</a>
+				<a href="javascript:void(0)">
+					<img src="./image/teach1.jpg" alt="">
+					<span>英语</span>
+				</a>
+				<a href="javascript:void(0)">
+					<img src="./image/teach2.jpg" alt="">
+					<span>美术</span>
+				</a>
+				<a href="javascript:void(0)">
+					<img src="./image/teach1.jpg" alt="">
+					<span>英语</span>
+				</a> -->
+		</div>	
+		<div class="hot">
+			<h2>热门教师</h2>
+		</div>
+		<div class="teacher">
+			<a :href="'./homeinfo.html?id='+item.id+''" v-for="item in list.teacher" class="new-a">
+				<div class="new-teacher"  >
+					<img :src="item.image" alt="">
+					<div class="teacher-text clearfix" >
+						<p id="p-name">
+							<span>{{ item.realname }}</span>
+							<span>
+								<p class="a-chlid"  v-for="items in item.subject" >{{ items.label }}</p>
+							    <p class="a-border" v-for="itema in item.grade">{{ itema.label }}</p>
+							</span>
+							<span class="span-last">已售{{ item.teach_time }}课时</span>
+						</p>
+						<p class="text-age clearfix" >
+							<span>{{ item.teach_year }}年教龄</span>
+						</p>
+						<p class="clearfix span-i">
+							<span v-for="itemb in item.extend_tag">
+								<i></i>
+								{{ itemb.label }}
+							</span>
+							<span v-for="itemd in item.type">
+								<i></i>
+								{{ itemd.label }}
+							</span>
+						</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/home.js"></script>
+	<script src="./js/swiper.js"></script>
+
+</body>
+</html>

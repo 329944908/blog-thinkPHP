@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发布博客</title>
+  <link rel="stylesheet" href="./css/doadd.css">
+  <link rel="stylesheet" href="./css/homeblog.css">
+    <script type="text/javascript" src="./ueditor/ueditor.config.js"></script>
+  	<script type="text/javascript" src="./ueditor/ueditor.all.min.js"></script>
+  	<script type="text/javascript" src="./ueditor/lang/zh-cn/zh-cn.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+	<div id="box">
+    <div class="total">
+      <p>编辑内容</p>
+    </div>
+		<div class="total-text">
+      <div :class="isShow ? 'show' : 'hide'" >
+          <div class="title">标题：<input v-model="title" type="text" name="title"></div>
+          <script id="container" name="content" type="text/plain" class="wid-tainer"></script>
+          <p>
+            博客分类：
+            <select v-model="classid" class="class-input"  >
+              <option :value="itema.classify_id"  v-for="itema in lists.classify_lists">{{ itema.classify_name }}</option>
+              <!-- <option value="4">it</option> -->
+            </select>
+          </p>
+          <button @click="ispush">保存</button> 
+      </div> 
+    </div>
+	</div>
+	<script>
+       var editor = new Vue({
+    		el: "#box",
+    		data: {
+    			lists:[],
+          list:[],
+    			title: "",
+    			classid: "",
+          isShow: true,
+    		},
+    		mounted: function(){
+          this.classadd();
+    			this.getData();
+    			var ue = UE.getEditor('container');
+    		},
+    		methods: {
+    			 classadd:function(){
+		              var that = this;
+		              var userId = window.localStorage.getItem("user_id");
+		              $.ajax({
+		                url: 'http://blog.com/api/blog/add',
+		                type: 'get',
+		                dataType:'json',
+		                data: {
+		                  user_id:userId,
+		                },
+		                success:function(res){
+		                  that.lists = res.data;
+		                  
+		                }
+		              })
+		          },
+		          
+    			getUeditorContent: function(){
+    				return UE.getEditor('container').getContent()
+    			},
+    			ispush:function(){
+		            var that = this;
+		            var userId = window.localStorage.getItem("user_id");
+                var blogId = window.location.search.split("=")[1];
+        				$.ajax({
+        					"url": "http://blog.com/api/blog/doEdit",
+        					"type": "post",
+        					"dataType": "json",
+        					"data": {
+        						"user_id": userId,
+        						"blog_id": blogId,
+        						"title": that.title,
+        						"content": that.getUeditorContent(),
+        						"classify_id": that.classid,
+        					},
+        					success: function(res){
+        						if(res.error_code == 0){
+        							alert("发布成功即将跳转。。。。。。");
+        							window.location.href="./doadd.html"
+        						}else {
+        							alert(res.message);
+        						}
+        					}
+        				})
+    			},
+    			getData:function(){
+    			  var that = this;
+	              var userId = window.localStorage.getItem("user_id");
+                var blogId = window.location.search.split("=")[1];
+	              $.ajax({
+	                url: 'http://blog.com/api/blog/add',
+	                type: 'get',
+	                dataType:'json',
+	                data: {
+	                  user_id:userId,
+	                  blog_id:blogId,
+	                },
+	                success:function(res){
+                        that.title = res.data.my_blog_info.title;
+                        that.classid = res.data.my_blog_info.classify_id;
+                        that.getUeditorContent() = res.data.my_blog_info.content;
+                        // console.log(that.classid)
+	                      that.list = res.data;
+
+	                }
+	              })
+    			}
+    		}
+    	})
+	</script>
+</body>
+</html>

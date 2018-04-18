@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="./css/homeblog.css">
+	<link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	<script src="./js/swiper.min.js"></script>
+	<script type="text/javascript" src="./js/jQuery-3.2.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+	<title>移动端</title>
+</head>
+<body>
+	<div id="box-content" class="clearfix">
+		<div class="box-header">
+			<span class="mtool"><a href="javascript:void(0)"><i class="iconfont">&#xe745;</i></a></span>
+			<span class="logo"><a href="javascript:void(0)"><span>C</span>SON</a></span>
+			<span class="header-login">
+			<a href="javascript:void(0)"><i class="iconfont">&#xe613;</i></a>
+			<span>
+				<a href="./bloglogin.html" :class="isBlog ? 'show' : 'hide'">登录</a> 
+				<a href="./blogpeople.html" :class="isBlog ? 'hide' : 'show'">{{ blog }}</a>
+			</span>
+			</span>
+		</div>
+		<div class="box-content" >
+			<div class="cont-title">
+			    <div>
+				 <a href="javascript:void(0)" v-for="itema in list.classify_lists" @click="clickcage(itema)">{{ itema.classify_name }}</a>
+			    </div>
+			</div>
+			<div class="swiper-container swiper-img">
+				<div class="swiper-wrapper hide-swiper">
+					<a href="javascript:void(0)" class="swiper-slide" v-for="itemd in banner">
+						<img :src="itemd.img">
+					</a>
+				</div>
+				<div class="swiper-pagination"></div> 
+			</div>
+			<div class="cont-info">
+				<div class="blog-info" v-for="item in lista.blog_lists">
+					<h2><a :href="'./blogdetail.html?id='+item.id+''">{{ item.title }}</a></h2>
+					<div class="info-text">
+						<span>{{ item.classify_name }}</span>
+						<span class="line-width">{{ item.author_name }}</span>
+						<span>{{ item.read_num }}阅读</span>
+						<span>{{ item.date }}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/homeblog.js"></script>
+</body>
+</html>

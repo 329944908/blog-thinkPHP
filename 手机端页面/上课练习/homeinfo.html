@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/homeinfo.css">
+	<script type="text/javascript" src="./js/jQuery-3.2.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+	<div id="box">
+		<div class="teacher" >
+			<div class="new-teacher" v-for="item in list">
+				<img :src="item.image">
+				<div class="teacher-text clearfix" >
+					<p class="clearfix">
+						<span>{{ item.realname }}</span>
+						<span v-for="items in item.subject">
+						<a href="javascript:void(0)" class="a-chlid" >{{ items.label }}</a>
+						</span>
+						<a href="javascript:void(0)" class="a-border" v-for="itema in item.grade">{{ itema.label }}</a>
+						<span class="span-last" id="span-last">{{ item.price }}</span>
+					</p>
+					<p class="text-age clearfix" >
+						<span>{{ item.teach_year }}年教龄</span>
+					</p>
+					<p class="clearfix span-i">
+						<span v-for="itemb in item.extend_tag">
+							<i></i>
+							{{ itemb.label }}
+						</span>
+						<span v-for="itemd in item.type">
+							<i></i>
+							{{ itemd.label }}
+						</span>
+						<span class="span-last">已售{{ item.teach_time }}课时</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="box-content" v-for="item in list">
+			<div class="content-info">
+				<p><i class="i-people"></i>个人简介</p>
+				<div>
+					<p>{{ item.intro }}</p>
+				</div>
+			</div>
+			<div class="content-info">
+				<p><i class="i-teach"></i>教学经历</p>
+				<div>
+				    <p v-for="itemq in item.teacher_experience">{{ itemq.title }}</p>
+				</div>
+			</div>
+			<div class="content-info top-line">
+				<p><i class="i-succes"></i>成功案例</p>
+				<div v-for="itemw in item.teacher_case">
+					<p class="info-title">{{ itemw.title }} </p>
+					<p>{{ itemw.content }}</p>
+				</div>
+			</div>
+		</div>
+		<div class="info-enag">
+			<div class="info-line">
+				<p>满意就预约吧</p>
+			</div>
+		</div>
+		<div class="info-btn clearfix">
+			<div class="btn-com ">
+			    <i class="btn-bg"></i>
+				<p>收藏</p>
+			</div>
+			<div class="btn-say">
+			    <a href="javascript:void(0)">预约试讲</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/homeinfo.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="./css/homeblog.css">
+	<script type="text/javascript" src="./js/jQuery-3.2.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	<title>我的博客</title>
+</head>
+<body>
+	<div class="cont-info" id="cont-info">
+		<div class="blog-info" v-for="item in list.my_blog_lists">
+			<h2><a :href="'./blogdetail.html?id='+item.id+''">{{ item.title }}</a></h2>
+			<div class="info-text">
+				<span>{{ item.classify_name }}</span>
+				<span class="line-width">{{ item.author_name }}</span>
+				<span>{{ item.read_num }}阅读</span>
+				<span>{{ item.date }}</span>
+			</div>
+			<!-- <button @click="clickDel(item)">删除</button>
+			<button @click="clickWrite(item)">编辑</button> -->
+		</div>
+	</div>
+	<script src="./js/myblog.js"></script>
+</body>
+</html>
