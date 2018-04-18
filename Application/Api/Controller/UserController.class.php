@@ -9,12 +9,17 @@ use Think\Controller;
 			$data['password'] = $_POST['password'];
 			if(isset($data['name'])&&!empty($data['name'])&&isset($data['phone'])&&!empty($data['phone'])&&isset($data['password'])&&!empty($data['password'])){
 				$userModel =  D('user');
-				$status = $userModel->add($data);
-				if ($status){
-     				_res();
+				$status = $userModel->where(array('phone'=>$data['phone']))->find();
+				if(!$status){
+					$res = $userModel->add($data);
+					if ($res){
+     					_res();
+					}else{
+    					_res('注册失败',false,'1007');
+					}
 				}else{
-    				_res('注册失败',false,'1007');
-				}
+					_res('该手机号已注册',false,'1006');
+				}	
 			}else{
 				_res('参数错误',false,'1001');
 			}

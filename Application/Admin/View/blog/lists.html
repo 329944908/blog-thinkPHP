@@ -41,13 +41,20 @@
 		</tr>
 		<?php } ?>
 	</table>
-	<div>
+	<div align="center">
 		<ul>
 			<?php for($i=1;$i<=$allPage;$i++){ ?>
-			<li><a href="/Admin/Blog/blogLists/p/<?php echo $i;?>"><?php echo 1;?></a></li>
+			<li><a href="/Admin/Blog/blogLists/p/<?php echo $i;?>"><?php echo $i;?></a></li>
 			<?php } ?>
 		</ul>
 	</div>
+	<!-- <div>
+		<ul>
+			<?php for($i=1;$i<=$allPage;$i++){ ?>
+			<li><a href="/Admin/Blog/blogLists/p/<?php echo $i;?>"><?php echo $i;?></a></li>
+			<?php } ?>
+		</ul>
+	</div> -->
 	<a href="/Admin/Blog/add" align="center">发布段子</a><br>
 </body>
 </html>

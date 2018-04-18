@@ -15,6 +15,11 @@
 			$res = parent::add($data);
 			return $res;
 		} 
+		public function save($data){
+			$data['updatetime'] = date("Y-m-d H:i:s");
+			$res = parent::save($data);
+			return $res;
+		}
 		// public function getInfoById($id){
 		// 	$sql = "select * from {$this->table} where id = {$id}";
 		// 	$res = $this->mysqli->query($sql);

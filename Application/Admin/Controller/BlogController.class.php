@@ -30,7 +30,7 @@
 			$blogmodel = D("Blog");
 			$usermodel = D("User");
 			$classify  = D("Classify"); 
-			$pageSize = 4;
+			$pageSize = 10;
 			$offset = ($p - 1) * $pageSize;
 			$count = $blogmodel->count();
 			$allPage = ceil($count/$pageSize);
@@ -39,6 +39,7 @@
 				$classify_info = $classify->getInfoById($value['classify_id']);
 		    	$data[$key]['classify_name'] = $classify_info['name'];
 		    }
+		    $this->assign('allPage',$allPage);
 		    $this->assign('data',$data);
 			$this->display('blog/lists');
 		}

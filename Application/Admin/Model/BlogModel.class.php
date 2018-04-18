@@ -3,7 +3,7 @@
 	class BlogModel extends BaseModel{
 		public function count(){
 			$Blog= M("Blog");
-			$count = $Blog->where("status =1")->count();
+			$count = $Blog->count();
 			return isset($count) ? $count : 0;
 		}
 		public function online($id){
