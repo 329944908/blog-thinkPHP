@@ -1,0 +1,36 @@
+[ 2018-05-08T19:07:37+08:00 ] 192.168.199.115 /api/blog/myBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005066s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.1923s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0566s ]
+SQL: SELECT * FROM `blog` WHERE `user_id` = 36  [ RunTime:0.1005s ]
+
+[ 2018-05-08T19:07:37+08:00 ] 192.168.199.115 /api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005100s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\xampp\htdocs\mythink\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Api\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) E:\xampp\htdocs\mythink\Application\Api\Model\BaseModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.1923s ]
+SQL: SHOW COLUMNS FROM `classify` [ RunTime:0.0568s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.1434s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0342s ]
+SQL: SELECT * FROM `ad` WHERE ( status=1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog` WHERE ( status=1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `classify` WHERE ( status=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `user` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `classify` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0003s ]
+

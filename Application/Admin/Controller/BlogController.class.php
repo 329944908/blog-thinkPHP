@@ -41,7 +41,7 @@
 		    }
 		    $this->assign('allPage',$allPage);
 		    $this->assign('data',$data);
-			$this->display('blog/lists');
+			$this->display('Blog/lists');
 		}
 		public function line(){
 			$id = isset($_GET['id'])?$_GET['id']:0;
